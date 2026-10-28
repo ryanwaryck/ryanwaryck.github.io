@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <async> function getWeather() { 
+   <script> async function getWeather() { 
 		let response=await fetch("weather.txt");
 		let data=await response.text()
 		document.querySelector("#report").innerHTML=data ;
 	}
-   </async> 
+   </script> 
 	
 </head>
 <body>
