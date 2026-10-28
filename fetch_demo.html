@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <script> async function getWeather() { 
-		let response=await fetch("weather.txt");
-		let data=await response.text()
-		document.querySelector("#report").innerHTML=data ;
-	}
-   </script> 
+  <script>
+			async function getWeather() { // "async" means pull another file from the server.
+				// "await" means wait till this is finished before proceeding.
+				let response=await fetch("weather.txt");
+				// "response.text()" turns network traffic into readable text.
+				let data=await response.text()
+				document.querySelector("#report").innerHTML=data ;
+			}
+		</script>
 	
 </head>
 <body>
